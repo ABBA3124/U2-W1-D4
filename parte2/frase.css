@@ -22,10 +22,10 @@ body {
 
 #testoAlternato {
   display: inline-block;
-  margin-top: 10vh;
+  margin: 10vh 10vh;
   padding: 1rem;
   border: 3px solid grey;
-  width: 520px;
+  width: 560px;
   position: relative; 
 }
 
@@ -45,6 +45,7 @@ body {
   color: grey; 
   font-size: 1.8rem;
   white-space: nowrap; 
+  left: 10px;
 }
 
 .parole i:nth-of-type(2) {
