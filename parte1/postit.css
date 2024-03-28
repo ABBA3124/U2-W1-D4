@@ -1,5 +1,17 @@
-body {
-}
+/* @keyframes pop-in {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+} */
 .lavagna {
   /* styling della lavagna */
   display: flex;
@@ -7,7 +19,7 @@ body {
   justify-content: space-around;
   padding: 6rem;
   height: 50vh;
-  background-color: gray;
+  background-color: #444444;
   align-items: center;
   gap: 2rem;
 }
@@ -24,6 +36,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  /* animation: pop-in 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards; */
 }
 /* tutti i post it gialli */
 .post1,
@@ -55,34 +68,42 @@ body {
   font-size: 32px;
   margin-top: 15px;
 }
-/* passaggio con il mouse */
-.post-it:hover {
-  /* Effetto al passaggio del mouse */
-  transform: rotate(0deg) scale(1.2);
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
-}
 /* posizioni per ogni post it */
 .post1 {
   transform: rotate(-3deg);
+  animation-delay: 0.5s;
 }
 .post2 {
   transform: rotate(2deg);
+  animation-delay: 1s;
 }
 .post3 {
   transform: rotate(-3deg);
+  animation-delay: 1.5s;
 }
 .post4 {
   transform: rotate(11deg);
+  animation-delay: 2s;
 }
 .post5 {
   transform: rotate(-3deg);
+  animation-delay: 2.5s;
 }
 .post6 {
   transform: rotate(-4deg);
+  animation-delay: 3s;
 }
 .post7 {
   transform: rotate(-5deg);
+  animation-delay: 3.5s;
 }
 .post8 {
   transform: rotate(7deg);
+  animation-delay: 4s;
+}
+
+/* passaggio con il mouse */
+.post-it:hover {
+  transform: rotate(0deg) scale(1.2);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 }
