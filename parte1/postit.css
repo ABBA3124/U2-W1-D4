@@ -1,0 +1,88 @@
+body {
+}
+.lavagna {
+  /* styling della lavagna */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 6rem;
+  height: 50vh;
+  background-color: gray;
+  align-items: center;
+  gap: 2rem;
+}
+
+.post-it {
+  /* Styling base dei post-it */
+  width: 19.5%;
+  height: 48%;
+  margin: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: "Indie Flower", cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/* tutti i post it gialli */
+.post1,
+.post5,
+.post7 {
+  background: linear-gradient(0deg, rgb(148 148 97) 0%, rgb(246 246 163) 100%);
+}
+/* tutti i post it green */
+.post2,
+.post4,
+.post8 {
+  background: linear-gradient(
+    0deg,
+    rgb(114 140 72 / 73%) 0%,
+    rgb(182 255 151) 100%
+  );
+}
+/* tutti i post it viola */
+.post3,
+.post6 {
+  background: linear-gradient(0deg, rgb(139 133 173) 0%, rgb(227 209 255) 100%);
+}
+/* contenuto post it */
+.titolo {
+  font-size: 46px;
+  font-weight: bold;
+}
+.contenuto {
+  font-size: 32px;
+  margin-top: 15px;
+}
+/* passaggio con il mouse */
+.post-it:hover {
+  /* Effetto al passaggio del mouse */
+  transform: rotate(0deg) scale(1.2);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+/* posizioni per ogni post it */
+.post1 {
+  transform: rotate(-3deg);
+}
+.post2 {
+  transform: rotate(2deg);
+}
+.post3 {
+  transform: rotate(-3deg);
+}
+.post4 {
+  transform: rotate(11deg);
+}
+.post5 {
+  transform: rotate(-3deg);
+}
+.post6 {
+  transform: rotate(-4deg);
+}
+.post7 {
+  transform: rotate(-5deg);
+}
+.post8 {
+  transform: rotate(7deg);
+}
